@@ -6,6 +6,7 @@ class about extends controller{
         $data['nama'] = $nama;
         $data["pekerjaan"] = $pekerjaan;
         $data['judul'] = 'About Me';
+
         $this->view('templates/header', $data);
         $this->view('about/index', $data);
         $this->view('templates/footer');
@@ -15,7 +16,7 @@ class about extends controller{
     {
         $data['judul'] = 'Pages';
         $this->view('templates/header', $data);
-        $this->view('about/page');
+        $this->view('about/page', $data);
         $this->view('templates/footer');
     }
 }

@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman about</title>
-</head>
-<body>
-    <h1>About Me</h1>
-    <p>Halo, nama saya <?php echo $data['nama']; ?>, saya adalah seoarang <?php echo $data['pekerjaan']; ?></p>
-</body>
-</html>
+<?php
+/** @var array $data */
+?>
+<div class="container">
+    <h1 class="mt-4" >About Me</h1>
+    <img src="<?php echo BASEURL; ?>/img/afdal.jpeg" width="200" class="rounded-circle shadow">
+    <p>Halo, nama saya <?php echo $data['nama']; ?>, saya adalah seorang <?php echo $data['pekerjaan']; ?> </p>
+</div>
